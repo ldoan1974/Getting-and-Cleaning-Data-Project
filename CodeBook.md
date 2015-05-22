@@ -1,8 +1,8 @@
 **INTRODUCTION**
 
 The script run_analysis will
-   1/- Merge the train and test set which down load from following link 
-	https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+   1/- Merge the train and test set which down load from this file
+	d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
    2/- Extract only the measurement on the mean and standard deviation for each measurement from file features.txt	
    3/- Use descriptive activity names to name the activities in the data set activity_labels.txt.
    4/- Appropriately label the data set with descriptive variable names from merged data set train and test.
