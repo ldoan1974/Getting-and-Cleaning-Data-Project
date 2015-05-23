@@ -34,13 +34,13 @@ subject_data <- rbind(subject_train, subject_test)
 features <- read.table("features.txt")
 
 ## get only columns with mean() or std() in their names
-mean_and_std_features <- grep("-(mean|std)\\(\\)", features[, 2])
+mean_stddeviation <- grep("-(mean|std)\\(\\)", features[, 2])
 
 ## subset the desired columns
-x_data <- x_data[, mean_and_std_features]
+x_data <- x_data[, mean_stddeviation]
 
 ## correct the column names
-names(x_data) <- features[mean_and_std_features, 2]
+names(x_data) <- features[mean_stddeviation, 2]
 
 #################################################################
 ## Step 3 - Use descriptive activity names to name the activities 
